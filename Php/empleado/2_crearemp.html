@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>registrar Empleado</title>
+       <link rel="shortcut icon" href="http://localhost/Proyecto%20Final/MIPF/Imagenes/lodosoftware.png">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+       <script src="https://kit.fontawesome.com/d43f4bbf1e.js" crossorigin="anonymous"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+       <link type="text/css" rel="stylesheet" href="http://localhost/Proyecto%20Final/MIPF/css/style_crearemp.css">
+       <script type="text/javascript" src="http://localhost/Proyecto%20Final/MIPF/js/javascript.js"></script>
+    
+
+    </head>
+
+   <body >
+        <div class="container">
+            <div class="login-container">
+            <div class="register">
+                <h1>Registrar Empleado</h1>
+
+                <form action="2.1_insertaremp.php"   method="post"  name="formCrear" id="formCrear">
+                    <input type="number"  placeholder="Cedula" class="nombre" name="cedula_usu" id="cedula_usu" required>
+                    <input type="text" placeholder="Nombre" class="pass" name="nombre_emp" id="nombre_emp" required>
+                    <input  placeholder="Apellido" class="nombre" name="apellido_emp" id="apellido_emp" required>
+                    <input type="number" placeholder="Telefono" class="pass" name="telefono_emp" id="telefono_emp" required>
+                    <input  placeholder="Direccion" class="nombre" name="direccion_emp" id="direccion_emp" required>
+                    <h6>Fecha de Nacimiento</h6> 
+                    <input type="date" placeholder="Fecha De Nacimiento"  name="fechanacim_emp" id="fechanacim_emp" required>
+                    <input type="email"  placeholder="Correo electronico" class="nombre" name="correo_emp" id="correo_emp" required>
+                    <p>SEXO:
+                        <select name="sexo_emp" id="sexo_emp" required>
+                        <option value="">----</option>
+                        <option value="Masculino">Masculino</option>    
+                        <option value="Femenino">Femenino</option>
+                        
+                    </select></p>
+                    <table>
+                    <tr>
+                        <td><button type="reset" class="submit">LIMPIAR</button></td>
+                </form>
+                     <td><button type="submit" class="submit" onclick="Registrar()">REGISTRAR</button></td>
+                     <td> <td><button type="button" class="submit"  onclick="volver()">VOLVER</button></td>
+                     </tr>                           
+            </table>
+            </div>
+             </div>
+               </div>
+
+               
+
+      </body>
+    
+        
+</html>

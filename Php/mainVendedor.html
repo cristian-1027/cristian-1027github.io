@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+	<head >
+		
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	   <link rel="shortcut icon" href="http://localhost/Proyecto%20Final/MIPF/Imagenes/lodosoftware.png">
+       
+	   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-J>R6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	   <script src="https://kit.fontawesome.com/d43f4bbf1e.js" crossorigin="anonymous"></script>
+	   <script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
+
+	   <title>Ferreteria Central Vale</title>
+
+	   <link type="text/css" rel="stylesheet" href="http://localhost/Proyecto%20Final/MIPF/CSS/stylemain.css">
+	   <link type="text/css" rel="stylesheet" href="http://localhost/Proyecto%20Final/MIPF/CSS/styleSlider.css">
+       <script type="text/javascript" src="http://localhost/Proyecto%20Final/MIPF/JS/javascript.js"></script>
+	   <script  type="text/javascript" src="/MIPF/JS/imprimir.js" ></script>
+	</head>
+<body>
+	<container>
+		<div class="header1">
+			<!--Logo de la empresa-->
+			<div class="logo_empresa" id="logo_empresa">
+				<img src="http://localhost/Proyecto%20Final/MIPF/Imagenes/Logo.jpeg" class="img1">
+			</div> 
+
+			<!--Titulo de la pagina-->
+			<div class="titulo_pagina" id="titulopag">
+				<center><h1 id='titulo_pagina'>
+					MY INVENTORY
+				</h1></center>
+			</div>
+
+			<div class="salirSeccion">
+				<form action="cerrarSeccion.php" name="cerrar">
+				<!--<button  onclick='prueba3()'class="btnsalir">hola</button>-->
+				<button  onclick='prueba3()' class="btnsalir"><img src="http://localhost/Proyecto%20Final/MIPF/Imagenes/salirseccion.png" alt="Salir"></button>
+				</form>
+			</div>
+		</div>	
+
+		<!--img src="http://localhost/Proyecto%20Final/MIPF/Imagenes/salirseccion.png" alt="">-->
+		
+		<header></header>
+
+		<nav>
+			<img src="http://localhost/Proyecto%20Final/MIPF/Imagenes/lodosoftware.png" class="LogoSoftware">
+			
+			
+			<!--Boton para cargar pagina productos-->
+			<button onclick='loadPageProV()' class="button1">PRODUCTOS</button>
+			<!--Boton para cargar pagina pedidos-->
+			<button onclick='loadPageProV()' class="button1">PEDIDOS</button>
+						
+			
+						
+			
+			
+		</nav>
+
+			<section >
+				
+				<div class="ventanaIframe">
+				<iframe class="mainIframe" style='display:none' id='frame' frameborder='0' name="mainframe" ></iframe>
+				</div>
+
+			</section>
+			
+			<footer>
+				<div class="infoEmp">
+					<table>
+						<thead>
+							<tr>
+								<td><h5>INFORMACION DE LA EMPRESA</h5></td>
+								<td><h5>HORARIOS</h5></td>
+								<td><h5>CONTACTANOS</h5></td>
+								<td><h5>REDES SOCIALES</h5></td>
+							</tr>
+						</thead>
+						<tbody><tr>
+							<td><p>FERRETERIA CENTRAL VALE<br>
+								Corregimiento de Arauca<br>
+								Cra 4 # 9-14<br>
+								Caldas<br>
+								Colombia
+								</p>
+							</td>
+							<td><p>
+									8:00am -- 6:00pm <br>
+									lunes a Sabado<br>
+									8:00am -- 5:00pm 
+									Domingos
+									
+							</p></td>
+							<td><p>Celular<br>
+									310.363.2622<br>
+									Correo
+									ferreteriaortizarauca@gmail.com
+							</p></td>
+							<td>
+								<button  onclick='btnFacebook()' class="btnRedes"><img src="http://localhost/Proyecto%20Final/MIPF/Imagenes/facebook.png" ></button>
+							
+								<button  onclick='btnInstagram()' class="btnRedes"><img src="http://localhost/Proyecto%20Final/MIPF/Imagenes/instagram.png" ></button>
+							</td>
+						</tr></tbody>
+					</table>
+				</div>
+			</footer>
+		
+		
+	</container>
+
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>registrar Empleado</title>
+       <link rel="shortcut icon" href="http://localhost/Proyecto%20Final/MIPF/Imagenes/lodosoftware.png">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+       <script src="https://kit.fontawesome.com/d43f4bbf1e.js" crossorigin="anonymous"></script>
+
+       <link type="text/css" rel="stylesheet" href="http://localhost/Proyecto%20Final/MIPF/css/style_crearemp.css">
+       <script type="text/javascript" src="http://localhost/Proyecto%20Final/MIPF/js/javascript.js"></script>
+    
+
+    </head>
+
+   <body >
+        <div class="container">
+            <div class="login-container">
+            <div class="register">
+                <h1>Registrar Proveedor</h1>
+
+                <form action="2.1_insertarProve.php"   method="post" >
+                    <input type="number"  placeholder="Nit" class="id" name="id_prove" id="id_rove" required>
+                    <input type="text" placeholder="Nombre Proveedor" class="nombre" name="nombre_prove" id="nombre_prove" required>
+                    <input type="number" placeholder="Telefono" class="pass" name="telefono_prove" id="telefono_prove" required>
+                    <input  placeholder="Ciudad" class="ciudad" name="ciudad_prove" id="ciudad_prove" required>
+                    <input  placeholder="Direccion" class="nombre" name="direccion_prove" id="direccion_prove" required>
+                   
+                    <table>
+                    <tr>
+                        <td><button type="reset" class="submit">LIMPIAR</button></td>
+                </form>
+                     <td><button type="submit" class="submit" onclick="RegistrarProve()">REGISTRAR</button></td>
+                     <td> <td><button type="button" class="submit"  onclick="volver()">VOLVER</button></td>
+                     </tr>                           
+            </table>
+            </div>
+             </div>
+               </div>
+
+               
+
+      </body>
+    
+        
+</html>

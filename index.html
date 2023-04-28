@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <title>Login</title>
+
+       <link rel="shortcut icon" href="Imagenes/lodosoftware.png">
+       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+       
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+       <script src="https://kit.fontawesome.com/d43f4bbf1e.js" crossorigin="anonymous"></script>
+       <script src="login/jslogin.js"></script>
+       <script src="JS/lista.js"></script>
+       
+
+       <link rel="stylesheet" href="login/Stylelogin.css">
+
+    </head>
+
+   <body >
+    
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+          <h2 class="active"> Iniciar Sesion </h2>
+          
+      
+          <!-- Icono -->
+          <div class="fadeIn first">
+            <img src="Imagenes/Logo.jpeg" id="icon" alt="User Icon" />
+          </div>
+      
+          <!-- Login Form -->
+          <form action="login/conexion.php" name="loginfor" method="post">
+            <input type="text" id="usuario" class="fadeIn second" name="usuario" placeholder="Numero de Cedula" required>
+            <input type="password" id="password" class="fadeIn third" name="password" placeholder="Contraseña" required>
+          <!--<input type="submit" onclick="verificar()" class="fadeIn fourth" value="Ingresar">-->
+            <input type="submit"class="fadeIn fourth" value="Ingresar">
+          
+          </form>
+          
+          <!-- Remind Passowrd -->
+          <div id="formFooter">
+            <a class="underlineHover" href="www.google.com">Restablecer Constraseña</a>
+          </div>
+          <div class="logosof">
+            <img src="Imagenes/lodosoftware1.png">
+          </div>
+          
+        </div>
+      </div>
+      </body>
+    
+        
+</html>

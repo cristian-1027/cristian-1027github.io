@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Crear Uusuario</title>
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+       <script src="https://kit.fontawesome.com/d43f4bbf1e.js" crossorigin="anonymous"></script>
+
+       <link rel="stylesheet" href="http://localhost/Proyecto%20Final/MIPF/css/style_crearusu.css">
+       <script src="http://localhost/Proyecto%20Final/MIPF/js/javascript.js"></script>
+          
+
+    </head>
+
+   <body >
+        <div class="container">
+            <div class="login-container">
+            <div class="register">
+                <h2>Registrar Usuario</h2>
+
+                <form action="2.1_insertarusuario.php"   method="post" >
+                    <input type="number"  placeholder="Cedula" class="nombre" name="cedula_usu" id="cedula_usu" required>
+                    <input type="text" placeholder="Contraseña" class="pass" name="password_usu" id="password_usu" required>
+                    <p>ROL:
+                        <select name="cargo_usu" id="cargo_usu" required>
+                        <option value="">----</option>
+                        <option value="Administrador">Administrador</option>    
+                        <option value="Jefe de Bodega">Jefe de Bodega</option>
+                        <option value="Auxiliar de Bodega">Auxiliar de Bodega</option>
+                        <option value="Secretaria">Secretaria</option>
+                        <option value="Vendedor">Vendedor</option>
+                    </select></p>
+                    <table>
+                    <tr>
+                        <td><button type="reset" class="submit">LIMPIAR</button></td>
+                </form>
+                        <td><button class="submit"  onclick="veriusu()">REGISTRARSE</button></td>
+                        <td><button class="submit" type="button" onclick="volver()">VOLVER</button> </td>                       </td>
+                    </tr>                           
+                    </table>
+            </div>
+             </div>
+               </div>
+
+               
+
+      </body>
+    
+        
+</html>
